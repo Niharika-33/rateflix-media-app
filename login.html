@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Movie Rating Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Custom font -->
+    <style>
+    body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('https://entrepreneurship.babson.edu/wp-content/uploads/2023/01/1200Movies.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(169, 169, 169, 0.5); /* Adjust the alpha (opacity) value as needed */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+        h2 {
+            font-family: gabriola;
+            font-size: 40px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #509fad;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #3e7ea6;
+        }
+        .signup-link {
+            color: #d1e6ea;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Welcome Back!</h2>
+        <form id="loginForm" method="POST" action="logincheck.php">
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="register.html" class="signup-link">Don't have an account? Sign up here.</a>
+    </div>
+</body>
+</html>
